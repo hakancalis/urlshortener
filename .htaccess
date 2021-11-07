@@ -1,0 +1,32 @@
+RewriteEngine On
+
+RewriteRule ^dil/tr$ ajax.php?Operation=LangTR [QSA,L]
+RewriteRule ^dil/en$ ajax.php?Operation=LangEN [QSA,L]
+RewriteRule ^sign-up$ sign-up.php [QSA,L]
+RewriteRule ^signUp$ ajax.php?Operation=signup [QSA,L]
+RewriteRule ^signIn$ ajax.php?Operation=signin [QSA,L]
+RewriteRule ^sign-in$ sign-in.php [QSA,L]
+RewriteRule ^uye-ol$ sign-up.php [QSA,L]
+RewriteRule ^giris-yap$ sign-in.php [QSA,L]
+RewriteRule ^cikis-yap$ ajax.php?Operation=logout [QSA,L]
+RewriteRule ^redirectUrl$ ajax.php?Operation=redirecturl [QSA,L]
+RewriteRule ^redirect/(.*) redirect.php?redirect_code=$1 [QSA,L]
+RewriteRule ^shortenUrl$ ajax.php?Operation=shortenurl [QSA,L]
+RewriteRule ^refreshTable$ ajax.php?Operation=refreshtable [QSA,L]
+RewriteRule ^saveAccount$ ajax.php?Operation=saveaccount [QSA,L]
+RewriteRule ^log-out$ ajax.php?Operation=logout [QSA,L]
+RewriteRule ^deleteURL$ ajax.php?Operation=deleteurl [QSA,L]
+RewriteRule ^hesabim/([0-9a-zA-Z-_/=]+)$ account.php?id=$1 [QSA,L]
+RewriteRule ^my-account/([0-9a-zA-Z-_/=]+)$ account.php?id=$1 [QSA,L]
+RewriteRule ^activation/([0-9a-zA-Z-_]+)$ member-activation.php?Operation=activation&user_token=$1 [L,QSA]
+
+
+RewriteRule ^advertisement-1$ ads.php?page=advertisement1 [QSA,L]
+RewriteRule ^advertisement-2$ ads.php?page=advertisement2 [QSA,L]
+RewriteRule ^advertisement-3$ ads.php?page=advertisement3 [QSA,L]
+RewriteRule ^advertisement-4$ ads.php?page=advertisement4 [QSA,L]
+
+
+
+
+
