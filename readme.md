@@ -2,9 +2,9 @@ EN
 
 URL Shortener
 
-#Installation
+# Installation
 
-###Composer
+### Composer
 ```
 composer init
 ```
@@ -30,6 +30,6 @@ After sending the files in the zip to your local server or remote server
 4.In functions.php Configure your SMTP from line 154.Example [PHPMailer](https://github.com/PHPMailer/PHPMailer)
 
 
-###Finish
+### Finish
 
 Installation is complete. For your questions [Contact](https://hakancalis.com.tr/contact)
